@@ -1,107 +1,107 @@
 ---
 title: "Get Started"
-description: "Commencez avec l'API Renifler pour analyser les technologies web, surveiller les domaines et plus encore."
+description: "Get started with the Renifler API to analyze web technologies, monitor domains, and more."
 ---
 
-# 🚀 Bienvenue sur l'API Renifler
+# 🚀 Welcome to the Renifler API
 
-L'API Renifler vous permet d'interagir avec notre plateforme pour :
+The Renifler API allows you to programmatically interact with our platform to:
 
-- 🔍 Analyser les technologies utilisées sur un site web
-- 🛡️ Vérifier les configurations DNS et SSL
-- 👤 Gérer les comptes utilisateurs et les avatars
-- 🤖 Générer des résumés technologiques avec l'IA
-- 📈 Surveiller les performances des sites web
+- 🔍 Analyze the technologies used on a website
+- 🛡️ Check DNS and SSL configurations
+- 👤 Manage user accounts and avatars
+- 🤖 Generate AI-powered technology summaries
+- 📈 Monitor website performance
 
-## 🔗 URL de base
+## 🔗 Base URL
 
 ```http
 https://api.renifler.io/v1
 ```
 
-Toutes les requêtes doivent être effectuées en HTTPS avec le préfixe `/v1`.
+All requests must be made over HTTPS and prefixed with `/v1`.
 
-## 🔐 Authentification
+## 🔐 Authentication
 
-Incluez votre clé API dans l'en-tête `X-API-Key` :
+Include your API key in the `X-API-Key` header:
 
 ```http
-X-API-Key: votre_clé_api
+X-API-Key: your_api_key
 ```
 
-Obtenez une clé API via votre [dashboard Renifler](https://dashboard.renifler.io/api-keys).
+You can get an API key from your [Renifler dashboard](https://dashboard.renifler.io/api-keys).
 
 <Note>
-Vous pouvez tester l'API sans clé en utilisant l'endpoint `/ping` :
+You can test the API without a key using the `/ping` endpoint:
 ```bash
 curl https://api.renifler.io/v1/ping
 ```
 </Note>
 
-## 🧰 Fonctionnalités principales
+## 🧰 Core Features
 
 <CardGroup cols={2}>
-  <Card title="Analyse de technologies" icon="cpu" href="/api-reference/technologies/scan">
-    Identifiez les frameworks, CMS et bibliothèques utilisés sur un site.
+  <Card title="Technology Analysis" icon="cpu" href="/api-reference/technologies/scan">
+    Identify frameworks, CMS, and libraries used on a website.
   </Card>
-  <Card title="Vérification SSL" icon="shield-check" href="/api-reference/ssl/check">
-    Analysez la validité, l'expiration et la configuration des certificats SSL.
+  <Card title="SSL Verification" icon="shield-check" href="/api-reference/ssl/check">
+    Analyze the validity, expiration, and configuration of SSL certificates.
   </Card>
-  <Card title="Surveillance DNS" icon="globe" href="/api-reference/dns/check">
-    Vérifiez la propagation DNS, les enregistrements MX, A, CNAME et plus.
+  <Card title="DNS Monitoring" icon="globe" href="/api-reference/dns/check">
+    Check DNS propagation and record types (A, MX, CNAME, etc.).
   </Card>
-  <Card title="Résumés IA" icon="bot" href="/api-reference/ai/resume">
-    Obtenez un résumé des technologies d'un site généré par l'IA.
+  <Card title="AI Resumes" icon="bot" href="/api-reference/ai/resume">
+    Get AI-generated summaries of technologies used on a site.
   </Card>
 </CardGroup>
 
-## 🛠️ Configuration locale
+## 🛠️ Local Setup
 
 <AccordionGroup>
-  <Accordion icon="github" title="Cloner votre documentation">
-    Votre documentation est hébergée sur GitHub. Pour la cloner localement :
+  <Accordion icon="github" title="Clone your documentation">
+    Your documentation is hosted on GitHub. To clone it locally:
     ```bash
-    git clone https://github.com/votre-org/docs-renifler.git
+    git clone https://github.com/your-org/docs-renifler.git
     cd docs-renifler
     ```
   </Accordion>
-  <Accordion icon="terminal" title="Prévisualiser localement">
-    Installez le CLI Mintlify :
+  <Accordion icon="terminal" title="Preview locally">
+    Install the Mintlify CLI:
     ```bash
     npm install -g mintlify
     ```
-    Puis lancez le serveur local :
+    Then start the local preview server:
     ```bash
     mintlify dev
     ```
-    Cela ouvrira la documentation sur `http://localhost:3000`.
+    It will open the docs at `http://localhost:3000`.
   </Accordion>
 </AccordionGroup>
 
-## 🚀 Déployer vos modifications
+## 🚀 Deploying Your Changes
 
 <AccordionGroup>
-  <Accordion icon="rocket" title="Installer l'application GitHub">
-    Installez l'application GitHub de Mintlify depuis votre [dashboard](https://dashboard.mintlify.com) pour automatiser les déploiements.
+  <Accordion icon="rocket" title="Install the GitHub App">
+    Install the Mintlify GitHub App from your [dashboard](https://dashboard.mintlify.com) to automate deployments.
   </Accordion>
-  <Accordion icon="git-commit" title="Pousser vos modifications">
-    Une fois vos modifications effectuées :
+  <Accordion icon="git-commit" title="Push your changes">
+    Once you're done editing:
     ```bash
     git add .
-    git commit -m "Mise à jour de la documentation"
+    git commit -m "Update docs"
     git push origin main
     ```
-    Vos changements seront automatiquement déployés.
+    Your updates will be deployed automatically.
   </Accordion>
 </AccordionGroup>
 
-## 📘 Étapes suivantes
+## 📘 What's Next
 
 <CardGroup cols={2}>
-  <Card title="Clés API" icon="key" href="/api-keys">
-    Générez, gérez et sécurisez vos clés API Renifler.
+  <Card title="API Keys" icon="key" href="/api-keys">
+    Generate, manage, and secure your Renifler API keys.
   </Card>
-  <Card title="Référence API" icon="book" href="/api-reference">
-    Parcourez l'ensemble des endpoints disponibles.
+  <Card title="API Reference" icon="book" href="/api-reference">
+    Browse all available endpoints.
   </Card>
 </CardGroup>
