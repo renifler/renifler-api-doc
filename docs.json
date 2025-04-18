@@ -13,11 +13,11 @@
       {
         "tab": "Get Started",
         "groups": [
-        {
-          "group": "Getting Started",
-          "pages": ["quickstart"]
-        }
-      ]
+          {
+            "group": "Getting Started",
+            "pages": ["get-started"]
+          }
+        ]
       },
       {
         "tab": "API Reference",
@@ -32,8 +32,6 @@
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
-  "navbar": {
-  },
-  "footer": {
-  }
+  "navbar": {},
+  "footer": {}
 }

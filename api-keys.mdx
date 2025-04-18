@@ -1,0 +1,41 @@
+---
+title: "API Keys"
+description: "How to create and manage API keys for the Renifler API."
+---
+
+# 🔐 API Keys
+
+API keys are required to authenticate requests to the Renifler API.
+
+## 🛠️ Creating an API Key
+
+1. Log in to your Renifler account.
+2. Navigate to the **API Keys** section in your dashboard.
+3. Click **Create API Key**.
+4. Provide a descriptive name for the key.
+5. (Optional) Set an expiration date.
+6. Click **Create** and securely store your new API key.
+
+## 📋 Using Your API Key
+
+Include your API key in the `X-API-Key` header of your HTTP requests:
+
+```http
+X-API-Key: your_api_key_here
+```
+
+## 🔄 Managing API Keys
+
+You can:
+
+- **Revoke** an API key to disable it.
+- **Regenerate** an API key to replace it with a new one.
+- **View** usage statistics for each API key.
+
+Manage your API keys in the [API Keys Dashboard](https://dashboard.renifler.io/api-keys).
+
+## ⚠️ Security Tips
+
+- Keep your API keys confidential.
+- Rotate your API keys regularly.
+- Use environment variables to manage your API keys securely.
