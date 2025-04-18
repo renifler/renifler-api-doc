@@ -13,14 +13,14 @@
       {
         "tab": "Get Started",
         "openapi": {
-          "source": "/api-reference/openapi.json",
+          "source": "https://api.renifler.io/openapi.json",
           "directory": "api-reference"
         }
       },
       {
         "tab": "API Reference",
         "openapi": {
-          "source": "/api-reference/openapi.json",
+          "source": "https://api.renifler.io/openapi.json",
           "directory": "api-reference"
         }
       }
