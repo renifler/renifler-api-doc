@@ -12,10 +12,12 @@
     "tabs": [
       {
         "tab": "Get Started",
-        "openapi": {
-          "source": "https://api.renifler.io/openapi.json",
-          "directory": "api-reference"
+        "groups": [
+        {
+          "group": "Getting Started",
+          "pages": ["quickstart"]
         }
+      ]
       },
       {
         "tab": "API Reference",
